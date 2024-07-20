@@ -1,14 +1,14 @@
 @font-face {
   font-family: "PingFangTC";
-  src: url("./PingFangTC-Semibold.ttf") format("woff");
+  src: url("../PingFangTC-Semibold.ttf") format("woff");
 }
 @font-face {
   font-family: "PingFangTC-light";
-  src: url("./PingFang-Light.ttf") format("woff");
+  src: url("../PingFang-Light.ttf") format("woff");
 }
 @font-face {
   font-family: "HelveticaNeue-Regular";
-  src: url("./HelveticaNeue Regular.ttf") format("woff");
+  src: url("../HelveticaNeue Regular.ttf") format("woff");
 }
 * {
   font-family: "PingFangTC";
