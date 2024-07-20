@@ -165,35 +165,35 @@ header {
 }
 
 .bottom-card-img1 {
-  background-image: url(./img/p-1.png);
+  background-image: url("../img/p-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bottom-card-img2 {
-  background-image: url(./img/p-2.png);
+  background-image: url("../img/p-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bottom-card-img3 {
-  background-image: url(./img/p-3.png);
+  background-image: url("../img/p-3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bottom-card-img4 {
-  background-image: url(./img/p-4.png);
+  background-image: url("../img/p-4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .bottom-card-img5 {
-  background-image: url(./img/p-5.png);
+  background-image: url("../img/p-5.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
