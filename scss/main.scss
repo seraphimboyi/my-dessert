@@ -175,6 +175,29 @@ header {
 .bottom-content-two p {
     font-family: 'PingFangTC-light';
 }
+.bottom-card-footer a:hover{
+    background-color: $primary-color;
+    color: white;
+}
+.bottom-card-footer a{
+    transition: 0.6s ease;
+}
+.bottom-card-left li:hover{
+    background-color: #EAF0ED;
+}
+.product-page-footer-li_Num a:hover {
+    background-color: $primary-color;
+    color: white;
+}
+.product-page-footer-li_Num a {
+    transition: 0.6s ease;
+}
+.product-page-footer-li_Arrow a:hover{
+    background-color: #EAF0ED;
+}
+.product-page-footer-li_Arrow a{
+    transition: 0.6s ease;
+}
 
 .bottom-card-img1 {
     background-image: url("../img/p-1.png");
@@ -223,6 +246,7 @@ header {
     display: flex;
     justify-content: end;
 }
+
 .bottom-card-container ul{
     border-right: #EAF0ED solid 1px ;
     border-left: #EAF0ED solid 1px ;

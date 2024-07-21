@@ -164,6 +164,36 @@ header {
   font-family: "PingFangTC-light";
 }
 
+.bottom-card-footer a:hover {
+  background-color: #3F5D45;
+  color: white;
+}
+
+.bottom-card-footer a {
+  transition: 0.6s ease;
+}
+
+.bottom-card-left li:hover {
+  background-color: #EAF0ED;
+}
+
+.product-page-footer-li_Num a:hover {
+  background-color: #3F5D45;
+  color: white;
+}
+
+.product-page-footer-li_Num a {
+  transition: 0.6s ease;
+}
+
+.product-page-footer-li_Arrow a:hover {
+  background-color: #EAF0ED;
+}
+
+.product-page-footer-li_Arrow a {
+  transition: 0.6s ease;
+}
+
 .bottom-card-img1 {
   background-image: url("../img/p-1.png");
   background-repeat: no-repeat;
