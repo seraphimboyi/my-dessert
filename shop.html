@@ -7,6 +7,7 @@
     <title>購物車</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 </head>
 
 <body>
@@ -14,10 +15,9 @@
         <header class="px-5 md:px-0 header out-frame flex justify-between justify-items-center"></a>
             <a class="block md:hidden" href=""><img class="nav-left-btn" src="./img/dehaze-24px.png" alt=""></a>
             <div>
-                <a href="./"><img class="header-logo-first hidden md:block" src="./img/logo-all-dark.svg"
+                <a href="./"><img class="header-logo-first hidden md:block" src="./img/logo-all-dark.svg" alt=""></a>
+                <a href="./"><img class="header-logo h-[18px] block md:hidden" src="./img/logotype-sm-dark.svg"
                         alt=""></a>
-                <a href="./"><img class="header-logo h-[18px] block md:hidden"
-                        src="./img/logotype-sm-dark.svg" alt=""></a>
             </div>
             <div class="header-nav-right flex  justify-center justify-items-center ">
                 <ul class="hidden md:flex justify-center justify-items-center text-base leading-10">
@@ -30,14 +30,17 @@
         </header>
     </div>
 
-    
-    <main class="out-frame">
-        <section class="cart_Detail">
+
+    <main class="out-frame w-[100%] flex gap-x-[1%] my-[30px]">
+        <section class="cart_content w-[100%] md:w-[66%]">
             <h2 class="py-[16px] text-[24px] text-[#3F5D45] text-center bg-[#EAF0ED]">您的購物車</h2>
-            <ul class="p-[30px] flex flex-col gap-y-[30px]">
-                <li class="cart_Detail_list flex flex-wrap gap-x-4 pb-[10px]">
-                    <div class="cartLIstItem_header w-[157px] h-[106px] md:h-[110px] md:w-[110px]"><img class="w-[100%] h-[100%] object-cover" src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60" alt=""></div>
-                    <div class="cartLIstItem_body flex-1 flex flex-col flex-wrap">
+            <ul class=" px-[30px] md:p-0 mt-[30px] flex flex-col gap-y-[30px] ">
+                <li class="cart_content_list flex flex-wrap md:flex-nowrap gap-x-4 md:pb-[10px] items-center">
+                    <div class="cartLIstItem_header w-[135px] h-[106px] md:h-[110px] md:w-[110px] min-w-[110px]"><img
+                            class="w-[100%] h-[100%] object-cover"
+                            src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+                            alt=""></div>
+                    <div class="cartLIstItem_body justify-around flex-1 flex flex-col md:flex-row  flex-wrap">
                         <div class="cartLIstItem_body_text text-[#3F5D45]">
                             <p class="font-[PingFangTC-light] font-[600] text-[20px]">焦糖馬卡龍</p>
                             <p class="font-[PingFangTC-light] font-[600] text-[16px]">NT$ 450</p>
@@ -48,11 +51,19 @@
                             <button class="btn-add w-[48px] h-[48px]">+</button>
                         </div>
                     </div>
-                    <div class="cartLIstItem_footer"></div>
+                    <div
+                        class="cartLIstItem_footer w-[100%] md:w-[140px] py-[8.5px] flex justify-end items-center mt-[10px] md:border-none">
+                        <p class="text-[20px] font-[600] text-[#3F5D45]">NT$ 900</p>
+                        <button
+                            class="hidden  w-[24px] h-[24px] ml-[40px] px-[6px] py-[1px] md:flex justify-center items-center">
+                            <span class="text-[#3F5D45] text-[24px] material-icons-outlined btn-delete">delete</span>
+                        </button>
+                    </div>
                 </li>
-                <li class="cart_Detail_list flex flex-wrap gap-x-4 pb-[10px]">
-                    <div class="cartLIstItem_header w-[157px] h-[106px] md:h-[110px] md:w-[110px]"><img class="w-[100%] h-[100%] object-cover" src="./img/p-5.png" alt=""></div>
-                    <div class="cartLIstItem_body flex-1 flex flex-col flex-wrap">
+                <li class="cart_content_list flex flex-wrap md:flex-nowrap gap-x-4 md:pb-[10px] items-center">
+                    <div class="cartLIstItem_header w-[135px] h-[106px] md:h-[110px] md:w-[110px] min-w-[110px]"><img
+                            class="w-[100%] h-[100%] object-cover" src="./img/p-5.png" alt=""></div>
+                    <div class="cartLIstItem_body justify-around flex-1 flex flex-col md:flex-row  flex-wrap">
                         <div class="cartLIstItem_body_text text-[#3F5D45]">
                             <p class="font-[PingFangTC-light] font-[600] text-[20px]">焦糖馬卡龍</p>
                             <p class="font-[PingFangTC-light] font-[600] text-[16px]">NT$ 450</p>
@@ -63,11 +74,19 @@
                             <button class="btn-add w-[48px] h-[48px]">+</button>
                         </div>
                     </div>
-                    <div class="cartLIstItem_footer"></div>
+                    <div
+                        class="cartLIstItem_footer w-[100%] md:w-[140px] py-[8.5px] flex justify-end items-center mt-[10px] md:border-none">
+                        <p class="text-[20px] font-[600] text-[#3F5D45]">NT$ 900</p>
+                        <button
+                            class="hidden  w-[24px] h-[24px] ml-[40px] px-[6px] py-[1px] md:flex justify-center items-center">
+                            <span class="text-[#3F5D45] text-[24px] material-icons-outlined btn-delete">delete</span>
+                        </button>
+                    </div>
                 </li>
-                <li class="cart_Detail_list flex flex-wrap gap-x-4 pb-[10px]">
-                    <div class="cartLIstItem_header w-[157px] h-[106px] md:h-[110px] md:w-[110px]"><img class="w-[100%] h-[100%] object-cover" src="./img/p-3.png" alt=""></div>
-                    <div class="cartLIstItem_body flex-1 flex flex-col flex-wrap">
+                <li class="cart_content_list flex flex-wrap md:flex-nowrap gap-x-4 md:pb-[10px] items-center">
+                    <div class="cartLIstItem_header w-[135px] h-[106px] md:h-[110px] md:w-[110px] min-w-[110px]"><img
+                            class="w-[100%] h-[100%] object-cover" src="./img/p-3.png" alt=""></div>
+                    <div class="cartLIstItem_body justify-around flex-1 flex flex-col md:flex-row flex-wrap">
                         <div class="cartLIstItem_body_text text-[#3F5D45]">
                             <p class="font-[PingFangTC-light] font-[600] text-[20px]">焦糖馬卡龍</p>
                             <p class="font-[PingFangTC-light] font-[600] text-[16px]">NT$ 450</p>
@@ -78,12 +97,38 @@
                             <button class="btn-add w-[48px] h-[48px]">+</button>
                         </div>
                     </div>
-                    <div class="cartLIstItem_footer"></div>
+                    <div
+                        class="cartLIstItem_footer w-[100%] md:w-[140px] py-[8.5px]  flex justify-end items-center mt-[10px] md:border-none">
+                        <p class="text-[20px] font-[600] text-[#3F5D45]">NT$ 900</p>
+                        <button
+                            class="hidden  w-[24px] h-[24px] ml-[40px] px-[6px] py-[1px] md:flex justify-center items-center">
+                            <span class="text-[#3F5D45] text-[24px] material-icons-outlined btn-delete">delete</span>
+                        </button>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section class="cart_Item"></section>
+        <section class="cart_right w-[33%] hidden md:block">
+            <div class="cart_right_content pb-4 px-5 bg-[#3F5D45]">
+                <h2 class="text-[#EAF0ED] py-4 text-[24px] text-center">訂單摘要</h2>
+                <ul class="cart_right_list py-4">
+                    <li class="text-[#EAF0ED] flex justify-between">
+                        <p>小計</p>
+                        <p>NT$ 2,700</p>
+                    </li>
+                    <li class="text-[#EAF0ED] flex justify-between pt-2 pb-4">
+                        <p>運費</p>
+                        <p>NT$ 300</p>
+                    </li>
+                    <li class="text-[#EAF0ED] flex justify-between text-[20px]">
+                        <p>總計</p>
+                        <p>NT$ 3,000</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="checkout-btn w-[100%] text-[24px] text-[#3F5D45] bg-[#FFE180] py-4">結帳</button>
+        </section>
     </main>
 
 
@@ -133,10 +178,14 @@
         </div>
 
     </footer>
-
-
 </body>
 
+<script>
+    const checkoutBtn = document.querySelector('.checkout-btn')
 
+    checkoutBtn.addEventListener('click', function () {
+        location.href = "./index.html";
+    })
+</script>
 
 </html>

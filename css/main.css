@@ -277,7 +277,7 @@ header {
   transition: 0.6s ease;
 }
 
-.cart_Detail_list {
+.cart_content_list {
   border-bottom: 1px solid #EAF0ED;
 }
 
@@ -287,4 +287,29 @@ header {
 
 .cartLIstItem_body_button button {
   border: 1px solid #EAF0ED;
+}
+
+.cartLIstItem_footer {
+  border-top: 1px solid #EAF0ED;
+}
+
+.cart_right_list {
+  border-top: 1px solid #EAF0ED;
+}
+
+.cartLIstItem_body_button button:hover {
+  background-color: #3F5D45;
+  color: white;
+}
+
+.btn-delete:hover {
+  color: red;
+}
+
+.checkout-btn:hover {
+  background-color: #e6b000;
+}
+
+.footer-head-right button:hover {
+  background-color: #ffc91a;
 }/*# sourceMappingURL=main.css.map */
