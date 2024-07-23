@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>付款成功</title>
+    <title>付款</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
@@ -31,14 +31,46 @@
     </div>
 
 
-    <main>
-        <section class="main_content">
-            
-        </section>
-    </main>
+
+    <section class="transport_right w-[41%] hidden min-[920px]:flex flex-col gap-y-5">
+        <div class="transport_right_amount">
+            <h2 class="py-4 text-[24px] bg-[#EAF0ED] text-[#8DA291] text-center">訂單摘要</h2>
+            <ul class="py-4 px-5">
+                <li class="flex justify-between items-center text-[#8DA291] "><p class="font-[PingFangTC-light]">小計</p><p>NT$ 2,700</p></li>
+                <li class="flex justify-between items-center text-[#8DA291] mt-2 mb-4"><p class="font-[PingFangTC-light]">運費</p><p>NT$ 300</p></li>
+                <li class="flex justify-between items-center text-[#8DA291] text-[20px]"><p class="font-[PingFangTC-light] font-bold">總計</p><p>NT$ 3,000</p></li>
+            </ul>
+        </div>
+
+        <div class="transport_right_item">
+            <h2 class="py-4 text-[24px] bg-[#EAF0ED] text-[#8DA291] text-center">購物清單</h2>
+            <ul class="p-5 flex flex-col gap-y-4">
+                <li class="flex gap-x-5">
+                    <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60" alt=""></div>
+                    <div class="right_item_body">
+                        <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                        <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                    </div>
+                </li>
+                <li class="flex gap-x-5">
+                    <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="./img/p-5.png" alt=""></div>
+                    <div class="right_item_body">
+                        <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                        <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                    </div>
+                </li>
+                <li class="flex gap-x-5">
+                    <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="./img/p-3.png" alt=""></div>
+                    <div class="right_item_body">
+                        <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                        <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
-    
 
     <footer class="">
         <div class="footer-head-bg bg-[#3F5D45]">
@@ -89,6 +121,11 @@
 </body>
 
 <script>
+    const checkoutBtn = document.querySelector('.checkout-btn')
+
+    checkoutBtn.addEventListener('click', function () {
+        location.href = "./transport.html";
+    })
 </script>
 
 </html>
