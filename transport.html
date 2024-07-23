@@ -25,54 +25,117 @@
                     <li class=" mr-15 header-li-mr"><a href="./product.html">甜點</a></li>
                     <li class=" mr-20 header-li-mr"><a href="./login.html">登入</a></li>
                 </ul>
-                <a href="./shop.html"><img class="header-shop-logo md:mt-[40%]" src="./img/shopping_cart.png " alt=""></a>
+                <a href="./shop.html"><img class="header-shop-logo md:mt-[40%]" src="./img/shopping_cart.png "
+                        alt=""></a>
             </div>
         </header>
     </div>
 
-    <main class="out-frame w-[100%] md:px-[80px]">
-        <section class="transport_form bg-[#3F5D45] w-[100%] md:w-[59%]">
+    <main class="out-frame w-[100%] md:px-[80px] flex md:py-[65px] md:gap-x-[20px]">
+        <section class="transport_form bg-[#3F5D45] w-[100%] min-[920px]:w-[59%] h-[596px]">
             <div class="form_head flex justify-between px-10 pt-[30px]">
-                <h2 class="text-[#EAF0ED] text-[36px]">運送</h2>
+                <h2 class="text-[#EAF0ED] text-[36px] ">運送</h2>
                 <ul class="timeline">
-                    <li class="timeline__item doingState"><p class="timeline_state "></p></li>
-                    <li class="timeline__item"><p class="timeline_state"></p></li>
-                    <li class="timeline__item"><p class="timeline_state"></p></li>
+                    <li class="timeline__item ">
+                        <p class="timeline_state doingState"></p>
+                    </li>
+                    <li class="timeline__item">
+                        <p class="timeline_state"></p>
+                    </li>
+                    <li class="timeline__item">
+                        <p class="timeline_state"></p>
+                    </li>
                 </ul>
             </div>
 
-            <form class="form_content p-[30px]">
+            <form class="form_content p-[30px] flex flex-col gap-y-4">
                 <div class="form_userName flex gap-x-[10px]">
                     <div class="user_lastName flex flex-col flex-1">
                         <label class="text-[20px] text-[#EAF0ED] mb-2" for="last">姓氏</label>
-                        <input class="font-[PingFangTC-light] text-[#3F5D45] border-none p-4 bg-[#EAF0ED] w-[100%]" id="last" type="text" placeholder="王">
+                        <input class="font-[PingFangTC-light] text-[#3F5D45] border-none p-4 bg-[#EAF0ED] w-[100%]"
+                            id="last" type="text" placeholder="王">
                     </div>
                     <div class="user_firstName flex flex-col flex-1">
-                        <label  class="text-[20px] text-[#EAF0ED] mb-2" for="first">名字</label>
-                        <input class="font-[PingFangTC-light] text-[#3F5D45] border-none p-4 bg-[#EAF0ED] w-[100%]" id="first" type="text" placeholder="小明">
+                        <label class="text-[20px] text-[#EAF0ED] mb-2" for="first">名字</label>
+                        <input class="font-[PingFangTC-light] text-[#3F5D45] border-none p-4 bg-[#EAF0ED] w-[100%]"
+                            id="first" type="text" placeholder="小明">
                     </div>
                 </div>
                 <div class="form_Phone">
                     <label class="block mb-2 text-[#EAF0ED] text-[20px]" for="phone">電話</label>
-                    <input class="font-[PingFangTC-light] p-4 w-[100%] bg-[#EAF0ED]" type="tel" name="" id="phone" placeholder="0912-345-678">
+                    <input class="font-[PingFangTC-light] p-4 w-[100%] bg-[#EAF0ED]" type="tel" name="" id="phone"
+                        placeholder="0912-345-678">
                 </div>
 
-                <div class="form_Address">
+                <div class="form_Address flex flex-col gap-y-2">
                     <label class="text-[20px] text-[#EAF0ED] w-[100%] block" for="address">地址</label>
-                    <div class="address_select"></div>
-                    <input class="font-[PingFangTC-light] w-[100%] p-4 text-[#3F5D45] bg-[#EAF0ED]" type="text" name="" id="address" placeholder="幸福路 520 號">
+                    <div class="address_select gap-x-[8px] flex">
+                        <div class="city_box w-[100%] relative ">
+                            <select
+                                class="appearance-none city text-[#3F5D45] w-[100%] p-4 font-[PingFangTC-light] bg-[#EAF0ED] border-none">
+                                <option value="高雄" selected disabled hidden>高雄</option>
+                                <option value="台北">台北</option>
+                                <option value="台中">台中 </option>
+                                <option value="高雄">高雄</option>
+                            </select>
+                        </div>
+                        <div class="area_box w-[100%] relative ">
+                            <select
+                                class="appearance-none area text-[#3F5D45] w-[100%] p-4 font-[PingFangTC-light] bg-[#EAF0ED] border-none">
+                                <option value="新興區" selected disabled hidden>新興區</option>
+                                <option value="三民區">三民區</option>
+                                <option value="苓雅區">苓雅區 </option>
+                                <option value="新興區">新興區</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input class="font-[PingFangTC-light] w-[100%] p-4 text-[#3F5D45] bg-[#EAF0ED]" type="text" name=""
+                        id="address" placeholder="幸福路 520 號">
                 </div>
             </form>
-
-            <button class="form_button"></button>
-
-
+            <button class="form-button w-[100%] py-5 text-[24px] text-[#3F5D45] bg-[#FFE180]">下一步</button>
         </section>
 
 
 
 
-        <section class="transport_right"></section>
+        <section class="transport_right w-[41%] hidden min-[920px]:flex flex-col gap-y-5">
+            <div class="transport_right_amount">
+                <h2 class="py-4 text-[24px] bg-[#EAF0ED] text-[#8DA291] text-center">訂單摘要</h2>
+                <ul class="py-4 px-5">
+                    <li class="flex justify-between items-center text-[#8DA291] "><p class="font-[PingFangTC-light]">小計</p><p>NT$ 2,700</p></li>
+                    <li class="flex justify-between items-center text-[#8DA291] mt-2 mb-4"><p class="font-[PingFangTC-light]">運費</p><p>NT$ 300</p></li>
+                    <li class="flex justify-between items-center text-[#8DA291] text-[20px]"><p class="font-[PingFangTC-light] font-bold">總計</p><p>NT$ 3,000</p></li>
+                </ul>
+            </div>
+
+            <div class="transport_right_item">
+                <h2 class="py-4 text-[24px] bg-[#EAF0ED] text-[#8DA291] text-center">購物清單</h2>
+                <ul class="p-5 flex flex-col gap-y-4">
+                    <li class="flex gap-x-5">
+                        <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60" alt=""></div>
+                        <div class="right_item_body">
+                            <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                            <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-x-5">
+                        <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="./img/p-5.png" alt=""></div>
+                        <div class="right_item_body">
+                            <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                            <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-x-5">
+                        <div class="right_item_head"><img class="object-cover h-[80px] min-w-[120px]" src="./img/p-3.png" alt=""></div>
+                        <div class="right_item_body">
+                            <p class="text-[#3F5D45] font-[PingFangTC-light]">焦糖馬卡龍（2）</p>
+                            <p class="text-[#3F5D45] text-[20px]">NT$ 900</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
@@ -126,19 +189,18 @@
 </body>
 
 <script>
-        const transportBtn = document.querySelector('.transportForm_button')
-        const timelineState = document.querySelectorAll('.timeline_state')
+    const transportBtn = document.querySelector('.form-button')
+    const timelineState = document.querySelectorAll('.timeline_state')
 
-        const paystate = 'carry'
+    const paystate = 'carry'
 
-        transportBtn.addEventListener('click',function(){
-            location.href = './payment.html'
-        })
+    transportBtn.addEventListener('click', function () {
+        location.href = './payment.html'
+    })
 
-        if(paystate === 'carry'){
-            timelineState[0].classList.add('doingState')
-        }
-
+    if (paystate === 'carry') {
+        timelineState[0].classList.add('doingState')
+    }
 </script>
 
 </html>

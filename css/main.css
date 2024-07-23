@@ -360,4 +360,66 @@ header {
   height: 12px;
   background-color: #EAF0ED;
   border-radius: 50%;
+}
+
+.address_select .city_box::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+  border-color: #3F5D45 transparent transparent transparent;
+}
+
+.address_select .area_box::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+  border-color: #3F5D45 transparent transparent transparent;
+}
+
+.address_select .city_box:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  right: 20px;
+  border-color: transparent transparent #3F5D45 transparent;
+}
+
+.address_select .area_box:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  right: 20px;
+  border-color: transparent transparent #3F5D45 transparent;
+}
+
+.transport_right_amount {
+  border: 1px solid #EAF0ED;
+}
+
+.transport_right_item {
+  border: 1px solid #EAF0ED;
+}
+
+.form-button:hover {
+  background-color: #ffc91a;
 }/*# sourceMappingURL=main.css.map */
