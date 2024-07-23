@@ -312,4 +312,52 @@ header {
 
 .footer-head-right button:hover {
   background-color: #ffc91a;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: calc((100% - 48px) / 2);
+  background-color: #EAF0ED;
+  height: 2px;
+}
+
+.timeline:after {
+  width: calc((100% - 48px) / 2);
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background-color: #EAF0ED;
+  height: 2px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.timeline__item {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #EAF0ED;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.doingState {
+  width: 12px;
+  height: 12px;
+  background-color: #EAF0ED;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

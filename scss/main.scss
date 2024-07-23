@@ -175,27 +175,34 @@ header {
 .bottom-content-two p {
     font-family: 'PingFangTC-light';
 }
-.bottom-card-footer a:hover{
+
+.bottom-card-footer a:hover {
     background-color: $primary-color;
     color: white;
 }
-.bottom-card-footer a{
+
+.bottom-card-footer a {
     transition: 0.6s ease;
 }
-.bottom-card-left li:hover{
+
+.bottom-card-left li:hover {
     background-color: #EAF0ED;
 }
+
 .product-page-footer-li_Num a:hover {
     background-color: $primary-color;
     color: white;
 }
+
 .product-page-footer-li_Num a {
     transition: 0.6s ease;
 }
-.product-page-footer-li_Arrow a:hover{
+
+.product-page-footer-li_Arrow a:hover {
     background-color: #EAF0ED;
 }
-.product-page-footer-li_Arrow a{
+
+.product-page-footer-li_Arrow a {
     transition: 0.6s ease;
 }
 
@@ -219,25 +226,29 @@ header {
     background-position: center;
     background-size: cover;
 }
+
 .bottom-card-img4 {
     background-image: url("../img/p-4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .bottom-card-img5 {
     background-image: url("../img/p-5.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .bottom-card-img6 {
     background-image: url(https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.product-big-img{
+
+.product-big-img {
     background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=800&q=60);
     width: 100%;
     padding: 30px;
@@ -247,17 +258,20 @@ header {
     justify-content: end;
 }
 
-.bottom-card-container ul{
-    border-right: #EAF0ED solid 1px ;
-    border-left: #EAF0ED solid 1px ;
+.bottom-card-container ul {
+    border-right: #EAF0ED solid 1px;
+    border-left: #EAF0ED solid 1px;
 }
-.bottom-card-right ul{
-    border-right: #EAF0ED solid 1px ;
-    border-left: #EAF0ED solid 1px ;
+
+.bottom-card-right ul {
+    border-right: #EAF0ED solid 1px;
+    border-left: #EAF0ED solid 1px;
 }
-.product-page-footer ul li{
+
+.product-page-footer ul li {
     border: 1px solid #EAF0ED;
 }
+
 // .product-page-footer-li:hover{
 //     background-color: $primary-color;
 //     color: white;
@@ -265,10 +279,10 @@ header {
 .color-block.active {
     background-color: $primary-color;
     color: #EAF0ED;
-  }
+}
 
 .login-left button:hover {
-    background-color: darken($second-color,30%);
+    background-color: darken($second-color, 30%);
 }
 
 .login-right a:hover {
@@ -276,34 +290,88 @@ header {
 }
 
 
-.login-right a{
+.login-right a {
     transition: 0.6s ease;
 }
-.cart_content_list{
+
+.cart_content_list {
     border-bottom: 1px solid #EAF0ED;
 }
-.cartLIstItem_body_button p{
+
+.cartLIstItem_body_button p {
     border: 1px solid #EAF0ED;
 }
-.cartLIstItem_body_button button{
+
+.cartLIstItem_body_button button {
     border: 1px solid #EAF0ED;
 }
-.cartLIstItem_footer{
+
+.cartLIstItem_footer {
     border-top: 1px solid #EAF0ED;
 }
+
 .cart_right_list {
-    border-top:1px solid #EAF0ED;
+    border-top: 1px solid #EAF0ED;
 }
-.cartLIstItem_body_button button:hover{
+
+.cartLIstItem_body_button button:hover {
     background-color: #3F5D45;
     color: white;
 }
+
 .btn-delete:hover {
     color: red;
 }
-.checkout-btn:hover{
+
+.checkout-btn:hover {
     background-color: darken($second-color, 30%);
 }
-.footer-head-right button:hover{
+
+.footer-head-right button:hover {
     background-color: darken($second-color, 20%);
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: calc((100% - 48px) / 2);
+    background-color: #EAF0ED;
+    height: 2px;
+}
+
+.timeline:after {
+    width: calc((100% - 48px) / 2);
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background-color: #EAF0ED;
+    height: 2px;
+}
+.timeline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+.timeline__item {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #EAF0ED;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.doingState {
+    width: 12px;
+    height: 12px;
+    background-color: #EAF0ED;
+    border-radius: 50%;
 }
