@@ -32,9 +32,17 @@
 
 
     <main>
-        <section class="main_content">
-            
-        </section>
+        <section class="success_main_content">
+            <div class="timeline_box">
+                <ul class="timeline w-[200px]">
+                    <li class="timeline__item"><p class="timeline_state payfinish"></p></li>
+                    <li class="timeline__item"><p class="timeline_state payfinish"></p></li>
+                    <li class="timeline__item"><p class="timeline_state payfinish"></p></li>
+                </ul>
+            </div>
+            <h2 class="success_main__title h-[45px] w-[190px]"><img  class="max-w-[100%] align-middle h-auto" src="./img/lg-paysuccess.svg"></h2>
+            <a  href="./index.html" class="success_btn mt-auto text-center block w-[100%] md:w-[300px] md:mt-0 p-5 bg-[#FFE180] text-[#3F5D45] text-[24px]">繼續逛逛</a>
+        </section> 
     </main>
 
 
@@ -89,6 +97,21 @@
 </body>
 
 <script>
+      const timeUl = document.querySelector('.timeline')
+        const timelineState = document.querySelectorAll('.timeline_state')
+        const timelineItem = document.querySelectorAll('.timeline__item')
+
+        const paystate = 'finish'
+        
+        if(paystate === 'finish'){
+            timeUl.classList.add('settle')
+            for(let i = 0 ; i<timelineState.length ; i++){
+                timelineState[i].classList.add('payfinish');
+                timelineItem[i].style.backgroundColor = "#3F5D45";
+            }
+
+               
+        }
 </script>
 
 </html>

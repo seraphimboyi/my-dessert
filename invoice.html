@@ -62,7 +62,7 @@
     
                     <div class="invoiceForm__uniform flex flex-col ">
                         <label class="mb-2 text-[20px] text-[#EAF0ED]">統一編號（選填）</label>
-                        <input class="p-4 bg-[#EAF0ED]" type="number" placeholder="12345678">
+                        <input class="p-4 bg-[#EAF0ED]" type="text" placeholder="12345678">
                     </div>
                 </div>
                 <div class="paperShow hidden">
@@ -99,7 +99,7 @@
 
                     <div class="invoiceForm__uniform flex flex-col">
                         <label class="text-[#EAF0ED] text-[20px] mb-2">統一編號（選填）</label>
-                        <input class="p-4 bg-[#EAF0ED]" type="number" placeholder="12345678">
+                        <input class="p-4 bg-[#EAF0ED]" type="text" placeholder="12345678">
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
         const paperBtn = document.querySelector('.paperBtn')
         const ectShow = document.querySelector('.ectShow')
         const paperShow = document.querySelector('.paperShow')
-        const invoiceBtn = document.querySelector('.invoiceForm_button')
+        const invoiceBtn = document.querySelector('.form-button')
         
         let isEtc = true
         function stateHandleChange(isEtc){

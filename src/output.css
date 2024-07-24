@@ -999,6 +999,10 @@ video {
   height: 40px;
 }
 
+.h-\[45px\] {
+  height: 45px;
+}
+
 .h-\[48px\] {
   height: 48px;
 }
@@ -1023,6 +1027,10 @@ video {
   height: 80px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-\[100\%\] {
   min-height: 100%;
 }
@@ -1041,6 +1049,14 @@ video {
 
 .w-\[171px\] {
   width: 171px;
+}
+
+.w-\[190px\] {
+  width: 190px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[226px\] {
