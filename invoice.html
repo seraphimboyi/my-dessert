@@ -32,63 +32,79 @@
 
     <main class="out-frame w-[100%] md:px-[80px] flex py-0 min-[920px]:py-[65px] md:gap-x-[20px]">
 
-        <section class="payment_form w-[100%] min-[920px]:w-[59%] bg-[#3F5D45]">
-            <div class="payment_form_head flex justify-between pt-[30px] px-5 min-[376px]:px-10">
-                <h2 class="text-[36px] text-[#EAF0ED]">付款</h2>
+        <section class="invoice_form w-[100%] min-[920px]:w-[59%] bg-[#3F5D45]">
+            <div class="invoice_form_head flex justify-between pt-[30px] px-5 min-[376px]:px-10">
+                <h2 class="text-[36px] text-[#EAF0ED]">發票</h2>
                 <ul class="timeline">
-                    <li class="timeline__item finishState bg-[#EAF0ED]">
-                        <p class="timeline_state bg-[EAF0ED]"></p>
+                    <li class="timeline__item bg-[#EAF0ED]">
+                        <p class="timeline_state finishState "></p>
+                    </li>
+                    <li class="timeline__item bg-[#EAF0ED]">
+                        <p class="timeline_state finishState "></p>
                     </li>
                     <li class="timeline__item">
                         <p class="timeline_state doingState"></p>
                     </li>
-                    <li class="timeline__item">
-                        <p class="timeline_state"></p>
-                    </li>
                 </ul>
             </div>
-            <div class="payment_form_content px-5 min-[376px]:px-[30px] py-[30px] flex flex-col gap-y-4">
-                <div class="payment_form_content_card flex flex-col relative gap-y-2">
-                    <label class="text-[20px] text-[#EAF0ED]" for="card">信用卡卡號</label>
-                    <input class="py-4 px-5 bg-[#EAF0ED]" type="text" placeholder="9012-3456-7890-1234" id="card">
-                    <span class="material-icons-outlined text-[#3F5D45] absolute top-[60%] right-5">credit_card</span>
+
+
+            <div class="invoice_form_content px-5 min-[376px]:px-[30px] py-[30px]">
+                <div class="invoiceForm_type flex items-center mb-[14px] gap-x-[1px] min-h-[100%]">
+                    <button class="etcBtn btn_handle">電子發票</button>
+                    <button class="paperBtn">郵寄發票</button>
                 </div>
-                <div class="payment_form_content_userName flex gap-x-[10px]">
-                    <div class="payment_form_content_LastName flex flex-col flex-1">
-                        <label class="text-[20px] mb-2 text-[#EAF0ED]" for="last">持卡人姓名</label>
-                        <input class="w-[100%] p-4 bg-[#EAF0ED]" type="text" placeholder="王" id="last">
+                <div class="ectShow">
+                    <div class="invoiceForm__email mb-4 flex flex-col">
+                        <label class="text-[20px] text-[#EAF0ED] mb-2 inline-block">電子郵箱</label>
+                        <input class="bg-[#EAF0ED] p-4" type="email" placeholder="example@email.com">
                     </div>
-                    <div class="payment_form_content_FirstName flex self-end flex-1">
-                        <input class="w-[100%] p-4 bg-[#EAF0ED]" type="text" placeholder="小明">
+    
+                    <div class="invoiceForm__uniform flex flex-col ">
+                        <label class="mb-2 text-[20px] text-[#EAF0ED]">統一編號（選填）</label>
+                        <input class="p-4 bg-[#EAF0ED]" type="number" placeholder="12345678">
                     </div>
                 </div>
-                <div class="payment_form_content_deadLine flex flex-col gap-y-2">
-                    <label class="w-[100%] text-[#EAF0ED] inline-block text-[20px]">有效期限</label>
-                    <div class="paymentForm__deadline__select flex gap-x-2">
-                        <div class="monthbox relative w-[100%]">
-                            <select class="month w-[100%] p-4 bg-[#EAF0ED] text-[#8DA291] appearance-none">
-                                <option value="none" selected disabled hidden>月</option> 
-                                <option value="一月">一月</option> 
-                                <option value="二月">二月 </option> 
-                                <option value="三月">三月</option>  
-                            </select>
+                <div class="paperShow hidden">
+
+                    <div class="invoiceForm__address">
+                        <div class="invoiceForm__address__title">
+                            <label>地址</label>
+                            <input type="checkbox" id="inv_addbox">
+                            <label for="inv_addbox">同運送地址</label>
                         </div>
-                        <div class="yearbox relative w-[100%]">
-                            <select class="year w-[100%] p-4 bg-[#EAF0ED] text-[#8DA291] appearance-none">
-                                <option value="none" selected disabled hidden>年</option> 
-                                <option value="2024">2024</option> 
-                                <option value="2025">2025 </option> 
-                                <option value="2026">2026</option> 
-                            </select>
+
+                        <div class="invoiceForm__address__select">
+                            <div class="citybox">
+                                <select class="city">
+                                    <option value="高雄" selected disabled hidden>高雄</option> 
+                                    <option value="台北">台北</option> 
+                                    <option value="台中">台中 </option> 
+                                    <option value="高雄">高雄</option>  
+                                </select>
+                            </div>
+                            <div class="areabox">
+                                <select class="area">
+                                    <option value="新興區" selected disabled hidden>新興區</option> 
+                                    <option value="三民區">三民區</option> 
+                                    <option value="苓雅區">苓雅區 </option> 
+                                    <option value="新興區">新興區</option> 
+                                </select>
+
+                            </div>
                         </div>
+
+                        <input type="text" placeholder="幸福路 520 號">
                     </div>
-                </div>
-                <div class="payment_form_content_security flex flex-col gap-y-2">
-                    <label class="text-[#EAF0ED] text-[20px]" for="safe">背面末三碼</label>
-                    <input class="p-4 bg-[#EAF0ED] " type="text" placeholder="123" id="safe">
+
+                    <div class="invoiceForm__uniform">
+                        <label>統一編號（選填）</label>
+                        <input type="number" placeholder="12345678">
+                    </div>
                 </div>
             </div>
-            <button class="form-button w-[100%] py-5 text-[24px] text-[#3F5D45] bg-[#FFE180]">下一步</button>
+            
+            <button class="form-button w-[100%] py-5 text-[24px] text-[#3F5D45] bg-[#FFE180]">確認結帳</button>
         </section>
 
         <section class="transport_right w-[41%] hidden min-[920px]:flex flex-col gap-y-5">
@@ -180,21 +196,58 @@
 </body>
 
 <script>
-      const timelineState = document.querySelectorAll('.timeline_state')
+     const timelineState = document.querySelectorAll('.timeline_state')
         const timelineItem = document.querySelectorAll('.timeline__item')
-        const payBtn = document.querySelector('.payment_button')
 
-        const paystate = 'pay'
+        const paystate = 'etc'
 
-        payBtn.addEventListener('click',()=>{
-            location.href = './invoice.html'
-        })
+        if(paystate === 'etc'){
+            for(let i=0 ; i<timelineState.length-1 ; i++){
+                timelineState[i].classList.add('finishState');
+                timelineItem[i].style.backgroundColor = "#EAF0ED";
+            }
 
-        if(paystate === 'pay'){
-            timelineState[0].classList.add('finishState');
-            timelineItem[0].style.backgroundColor = "#EAF0ED";
-            timelineState[1].classList.add('doingState')
+            timelineState[2].classList.add('doingState')
         }
+
+
+
+        const etcBtn =document.querySelector('.etcBtn')
+        const paperBtn = document.querySelector('.paperBtn')
+        const ectShow = document.querySelector('.ectShow')
+        const paperShow = document.querySelector('.paperShow')
+        const invoiceBtn = document.querySelector('.invoiceForm_button')
+        
+        let isEtc = true
+        function stateHandleChange(isEtc){
+            if(isEtc){
+                ectShow.style.display = 'block'
+                paperShow.style.display = 'none'
+                etcBtn.classList.add('btn_handle')
+                paperBtn.classList.remove('btn_handle')
+            } else{
+                ectShow.style.display = 'none'
+                paperShow.style.display = 'block'
+                etcBtn.classList.remove('btn_handle')
+                paperBtn.classList.add('btn_handle')
+            }  
+        }
+        etcBtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            isEtc = true
+            stateHandleChange(isEtc)
+        })
+        paperBtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            isEtc = false
+            stateHandleChange(isEtc)
+        })
+        invoiceBtn.addEventListener('click',()=>{
+            location.href='./success.html'
+        })
+        stateHandleChange(isEtc)
+
+
 </script>
 
 </html>
