@@ -483,4 +483,29 @@ header {
 .btn_handle {
   background-color: #EAF0ED !important;
   color: #3F5D45 !important;
+}
+
+.invoiceForm__address__select .citybox::before, .invoiceForm__address__select .areabox::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+  border-color: #3F5D45 transparent transparent transparent;
+}
+
+.invoiceForm__address__select .citybox:after, .invoiceForm__address__select .areabox:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 5px solid;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  right: 20px;
+  border-color: transparent transparent #3F5D45 transparent;
 }/*# sourceMappingURL=main.css.map */

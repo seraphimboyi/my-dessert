@@ -32,7 +32,7 @@
 
     <main class="out-frame w-[100%] md:px-[80px] flex py-0 min-[920px]:py-[65px] md:gap-x-[20px]">
 
-        <section class="invoice_form w-[100%] min-[920px]:w-[59%] bg-[#3F5D45]">
+        <section class="invoice_form w-[100%] min-[920px]:w-[59%] bg-[#3F5D45] h-[100%]">
             <div class="invoice_form_head flex justify-between pt-[30px] px-5 min-[376px]:px-10">
                 <h2 class="text-[36px] text-[#EAF0ED]">發票</h2>
                 <ul class="timeline">
@@ -67,24 +67,24 @@
                 </div>
                 <div class="paperShow hidden">
 
-                    <div class="invoiceForm__address">
-                        <div class="invoiceForm__address__title">
-                            <label>地址</label>
-                            <input type="checkbox" id="inv_addbox">
-                            <label for="inv_addbox">同運送地址</label>
+                    <div class="invoiceForm__address flex flex-col gap-y-2 mb-4">
+                        <div class="invoiceForm__address__title flex justify-between items-center">
+                            <label class="text-[#EAF0ED] text-[20px]">地址</label>
+                            <input class="ml-auto" type="checkbox" id="inv_addbox">
+                            <label class="text-[#EAF0ED]" for="inv_addbox">同運送地址</label>
                         </div>
 
-                        <div class="invoiceForm__address__select">
-                            <div class="citybox">
-                                <select class="city">
+                        <div class="invoiceForm__address__select flex gap-x-2">
+                            <div class="citybox w-[100%] relative">
+                                <select class="city w-[100%] p-4 bg-[#EAF0ED] text-[#3F5D45] appearance-none">
                                     <option value="高雄" selected disabled hidden>高雄</option> 
                                     <option value="台北">台北</option> 
                                     <option value="台中">台中 </option> 
                                     <option value="高雄">高雄</option>  
                                 </select>
                             </div>
-                            <div class="areabox">
-                                <select class="area">
+                            <div class="areabox w-[100%] relative">
+                                <select class="area w-[100%] p-4 bg-[#EAF0ED] text-[#3F5D45] appearance-none">
                                     <option value="新興區" selected disabled hidden>新興區</option> 
                                     <option value="三民區">三民區</option> 
                                     <option value="苓雅區">苓雅區 </option> 
@@ -94,12 +94,12 @@
                             </div>
                         </div>
 
-                        <input type="text" placeholder="幸福路 520 號">
+                        <input class="p-4 bg-[#EAF0ED]" type="text" placeholder="幸福路 520 號">
                     </div>
 
-                    <div class="invoiceForm__uniform">
-                        <label>統一編號（選填）</label>
-                        <input type="number" placeholder="12345678">
+                    <div class="invoiceForm__uniform flex flex-col">
+                        <label class="text-[#EAF0ED] text-[20px] mb-2">統一編號（選填）</label>
+                        <input class="p-4 bg-[#EAF0ED]" type="number" placeholder="12345678">
                     </div>
                 </div>
             </div>
