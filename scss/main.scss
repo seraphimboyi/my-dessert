@@ -439,3 +439,40 @@ header {
 .form-button:hover{
     background-color: darken($second-color, 20%);
 }
+.finishState:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-right: 1px solid #3F5D45;
+    border-bottom: 1px solid #3F5D45;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+.paymentForm__deadline__select .monthbox::before, .paymentForm__deadline__select .yearbox::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+    border-color: #3F5D45 transparent transparent transparent;
+}
+.paymentForm__deadline__select .monthbox:after, .paymentForm__deadline__select .yearbox:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 5px solid;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    right: 20px;
+    border-color: transparent transparent #3F5D45 transparent;
+}
+.payment_form_content_security input{
+    width: calc(50% - 8px);
+}
