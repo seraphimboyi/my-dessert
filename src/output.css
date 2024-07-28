@@ -703,6 +703,14 @@ video {
   top: 60%;
 }
 
+.top-\[60\] {
+  top: 60;
+}
+
+.top-\[60px\] {
+  top: 60px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -3054,6 +3062,10 @@ video {
       max-width: 1536px;
     }
   }
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:font-bold:hover {

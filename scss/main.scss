@@ -547,3 +547,51 @@ header {
     row-gap: 32px;
     align-items: center;
 }
+.ham-nav {
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  /* 隱藏 checkbox */
+  .ham-input {
+    display: none;
+  }
+  
+  /* 漢堡按鈕 */
+  .ham-label {
+    float: left;
+  
+    img {
+      width: 30px;   
+      vertical-align: middle;
+    }
+  }
+  
+  /* 選單列 */
+  .ham-menu {
+    clear: both;
+    background: #fff;
+    li {
+    //   border-bottom: 2px solid #efefef;
+      a {
+        display: block;
+        padding: 10px 0;
+        font-size: 20px;
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .ham-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .ham-input:checked ~ .ham-menu {
+    max-height: 300px;
+  }

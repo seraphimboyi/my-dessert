@@ -13,11 +13,20 @@
 <body>
     <div class="container out-container">
         <header class="px-5 md:px-0 header out-frame flex justify-between justify-items-center"></a>
-            <a class="block md:hidden" href=""><img class="nav-left-btn" src="./img/dehaze-24px.png" alt=""></a>
+            <!-- <a class="block md:hidden" href=""><img class="nav-left-btn" src="./img/dehaze-24px.png" alt=""></a> -->
+            <nav class="ham-nav w-[24px] h-[24px] md:hidden">
+                <label class="ham-label" for="switch"><img class="hover:cursor-pointer" src="./img/dehaze-24px.png"></label><!--漢堡按鈕圖示-->
+                <input class="ham-input" type="checkbox" id="switch"><!--選單開關-->
+                <ul class="absolute top-[60px] ham-menu w-[300px]"><!--選單內容-->
+                    <li class="text-left"><a class="text-[#3F5D45]" href="./index.html">回首頁</a></li>
+                    <li class="text-left"><a class="text-[#3F5D45]" href="./product.html">甜點頁面</a></li>
+                    <li class="text-left"><a class="text-[#3F5D45]" href="./login.html">登入</a></li>
+                </ul>
+            </nav>
+    
             <div>
                 <a href="./"><img class="header-logo-first hidden md:block" src="./img/logo-all-dark.svg" alt=""></a>
-                <a href="./"><img class="header-logo h-[18px] block md:hidden" src="./img/logotype-sm-dark.svg"
-                        alt=""></a>
+                <a href="./"><img class="header-logo h-[18px] block md:hidden" src="./img/logotype-sm-dark.svg" alt=""></a>
             </div>
             <div class="header-nav-right flex  justify-center justify-items-center ">
                 <ul class="hidden md:flex justify-center justify-items-center text-base leading-10">
@@ -25,8 +34,7 @@
                     <li class=" mr-15 header-li-mr"><a href="./product.html">甜點</a></li>
                     <li class=" mr-20 header-li-mr"><a href="./login.html">登入</a></li>
                 </ul>
-                <a href="./shop.html"><img class="header-shop-logo md:mt-[40%]" src="./img/shopping_cart.png "
-                        alt=""></a>
+                <a href="./shop.html"><img class="header-shop-logo md:mt-[40%]" src="./img/shopping_cart.png " alt=""></a>
             </div>
         </header>
     </div>
