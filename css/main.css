@@ -588,4 +588,12 @@ header {
 
 .ham-input:checked ~ .ham-menu {
   max-height: 300px;
+}
+
+.success_btn:hover {
+  background-color: #ffc91a;
+}
+
+.etcBtn:hover .paperBtn:hover {
+  background-color: #ffc91a;
 }/*# sourceMappingURL=main.css.map */

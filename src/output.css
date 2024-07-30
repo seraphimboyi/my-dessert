@@ -772,6 +772,10 @@ video {
   margin-bottom: 30px;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -2364,6 +2368,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .py-\[15px\] {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2389,21 +2398,12 @@ video {
   padding-bottom: 8.5px;
 }
 
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pb-\[10px\] {
-  padding-bottom: 10px;
 }
 
 .pl-\[15\%\] {
@@ -3068,6 +3068,11 @@ video {
   cursor: pointer;
 }
 
+.hover\:bg-red-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3123,6 +3128,11 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:my-\[30px\] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .md\:mr-\[20px\] {
     margin-right: 20px;
   }
