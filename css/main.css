@@ -594,6 +594,6 @@ header {
   background-color: #ffc91a;
 }
 
-.etcBtn:hover .paperBtn:hover {
-  background-color: #ffc91a;
+.bottom-card .border-middle {
+  border-right: solid 1px #EAF0ED;
 }/*# sourceMappingURL=main.css.map */
