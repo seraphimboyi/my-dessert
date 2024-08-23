@@ -178,6 +178,10 @@ header {
   background-color: #EAF0ED;
 }
 
+.bottom-card-left li {
+  border-bottom: 1px solid #EAF0ED;
+}
+
 .product-page-footer-li_Num a:hover {
   background-color: #3F5D45;
   color: white;
@@ -240,7 +244,6 @@ header {
 .product-big-img {
   background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=800&q=60);
   width: 100%;
-  padding: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
